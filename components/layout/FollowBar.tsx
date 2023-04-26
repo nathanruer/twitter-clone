@@ -5,6 +5,9 @@ const FollowBar = () => {
         <h2 className="text-white text-xl font-semibold">
           Who to follow
         </h2>
+        <div className="flex flex-col gap-6 mt-4">
+          {/* TODO USER LIST */}
+        </div>
       </div>
     </div>
   )
