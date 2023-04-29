@@ -7,10 +7,14 @@ import Layout from '@/components/Layout'
 import LoginModal from '@/components/modals/LoginModal'
 import RegisterModal from '@/components/modals/RegisterModal'
 import EditModal from '@/components/modals/EditModal'
+import Head from 'next/head'
 
 export default function App({ Component, pageProps }: AppProps) {
   return(
     <SessionProvider session={pageProps.session}>
+      <Head>
+        <title>Twitter</title>
+      </Head>
       <Toaster />
       <EditModal />
       <RegisterModal />
